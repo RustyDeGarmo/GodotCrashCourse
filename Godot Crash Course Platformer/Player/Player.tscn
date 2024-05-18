@@ -98,4 +98,4 @@ shape = SubResource("CapsuleShape2D_y48k7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wuss1")
-animation = &"Death"
+animation = &"Run"
