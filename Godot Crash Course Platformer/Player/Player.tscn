@@ -1,6 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://bx83udlcs4aam"]
+[gd_scene load_steps=19 format=3 uid="uid://bx83udlcs4aam"]
 
 [ext_resource type="Texture2D" uid="uid://dk835rukju41k" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Packs/Sunnyland/spritesheets/player.png" id="1_7gcmm"]
+[ext_resource type="Script" path="res://Player/Player.gd" id="1_31god"]
 [ext_resource type="Texture2D" uid="uid://jbwj6b6qqx0l" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Packs/Sunnyland/sprites/player/idle/player-idle-1.png" id="2_j8w4w"]
 [ext_resource type="Texture2D" uid="uid://m71dfj7gtvcr" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Packs/Sunnyland/sprites/player/idle/player-idle-2.png" id="3_vjd3f"]
 [ext_resource type="Texture2D" uid="uid://c8iu8uyxfo4js" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Packs/Sunnyland/sprites/player/idle/player-idle-3.png" id="4_ej5t3"]
@@ -89,7 +90,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_31god")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_y48k7")
