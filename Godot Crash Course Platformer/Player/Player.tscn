@@ -16,6 +16,8 @@
 [ext_resource type="Texture2D" uid="uid://bpl4efrib0ktf" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Packs/Sunnyland/sprites/player/run/player-run-6.png" id="13_ag742"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y48k7"]
+radius = 8.0
+height = 20.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6v3ph"]
 atlas = ExtResource("1_7gcmm")
@@ -237,8 +239,9 @@ script = ExtResource("1_31god")
 shape = SubResource("CapsuleShape2D_y48k7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -6)
 sprite_frames = SubResource("SpriteFrames_wuss1")
-animation = &"Jump"
+animation = &"Idle"
 frame = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
