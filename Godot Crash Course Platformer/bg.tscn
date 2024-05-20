@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://d0o2k354ph572"]
 
 [ext_resource type="Script" path="res://BG.gd" id="1_qcfmm"]
-[ext_resource type="Texture2D" uid="uid://d3inn0asxct2u" path="res://AssetPacks/World/Background/back.png" id="2_v2wlu"]
-[ext_resource type="Texture2D" uid="uid://bfy6bt02nkhhn" path="res://AssetPacks/World/Background/middle.png" id="3_0msex"]
-[ext_resource type="Texture2D" uid="uid://dt4vwaoalnscf" path="res://AssetPacks/World/Props/tree-house.png" id="3_s7ep3"]
-[ext_resource type="Texture2D" uid="uid://2yk0n7w5f8jv" path="res://AssetPacks/World/Props/tree.png" id="4_xqfag"]
-[ext_resource type="Texture2D" uid="uid://ir60m5rank5o" path="res://AssetPacks/World/Props/wooden-house.png" id="5_6uo66"]
+[ext_resource type="Texture2D" uid="uid://d3inn0asxct2u" path="res://AssetPacks/ProjectPacks/World/Background/back.png" id="2_v2wlu"]
+[ext_resource type="Texture2D" uid="uid://bfy6bt02nkhhn" path="res://AssetPacks/ProjectPacks/World/Background/middle.png" id="3_0msex"]
+[ext_resource type="Texture2D" uid="uid://dt4vwaoalnscf" path="res://AssetPacks/ProjectPacks/World/Props/tree-house.png" id="3_s7ep3"]
+[ext_resource type="Texture2D" uid="uid://2yk0n7w5f8jv" path="res://AssetPacks/ProjectPacks/World/Props/tree.png" id="4_xqfag"]
+[ext_resource type="Texture2D" uid="uid://ir60m5rank5o" path="res://AssetPacks/ProjectPacks/World/Props/wooden-house.png" id="5_6uo66"]
 
 [node name="BG" type="ParallaxBackground"]
 script = ExtResource("1_qcfmm")
