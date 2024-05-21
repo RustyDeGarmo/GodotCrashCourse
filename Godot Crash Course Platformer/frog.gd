@@ -7,6 +7,9 @@ var player
 var chase = false
 @onready var animatedSprite = get_node("AnimatedSprite2D")
 
+func _ready():
+	animatedSprite.play("Idle")
+
 func _physics_process(delta):
 	
 	# Add the gravity.
@@ -33,7 +36,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-#PlayerDetection
+#PlayerDetection Area2d connections
 func _on_player_detection_body_entered(body):
 	if body.name == "Player":
 		chase = true
@@ -45,9 +48,19 @@ func _on_player_detection_body_exited(body):
 
 	
 
-#PlayerDeath
+#PlayerDeath Area2d connections
 func _on_player_death_body_entered(body):
 	if body.name == "Player":
-		animatedSprite.play("Death")
-		await animatedSprite.animation_finished
-		self.queue_free()
+		death()
+
+
+func _on_player_collision_body_entered(body):
+	if body.name == "Player":
+		body.health -= 3
+		death()
+
+func death():
+	chase = false
+	animatedSprite.play("Death")
+	await animatedSprite.animation_finished
+	self.queue_free()
