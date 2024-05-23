@@ -48,18 +48,23 @@ func _on_player_detection_body_exited(body):
 
 	
 
-#PlayerDeath Area2d connections
+#FrogDeath Area2d connections. 
+#The frog dies when the player jumps on it's head
 func _on_player_death_body_entered(body):
 	if body.name == "Player":
 		death()
 
-
+#PlayerCollision Area2d connection. 
+#If the frog runs into the player the player takes damage and the frog dies
 func _on_player_collision_body_entered(body):
 	if body.name == "Player":
-		body.health -= 3
+		Game.playerHP -= 3
 		death()
 
 func death():
+	Game.Gold += 5
+	Utils.saveGame()
+	
 	chase = false
 	animatedSprite.play("Death")
 	await animatedSprite.animation_finished
