@@ -23,7 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://cad0e06g0b45v" path="res://AssetPacks/ProjectPacks/Enemies/Eagle/eagle.tscn" id="21_25vrf"]
 [ext_resource type="PackedScene" uid="uid://bttsjij0ss8q0" path="res://AssetPacks/ProjectPacks/Enemies/Frog/frog.tscn" id="22_8sn40"]
 [ext_resource type="PackedScene" uid="uid://cewt171s35pmt" path="res://AssetPacks/ProjectPacks/Pickups/Gem/gem.tscn" id="22_fohr8"]
-[ext_resource type="PackedScene" uid="uid://c6diiunn70psp" path="res://AssetPacks/ProjectPacks/Pickups/Cheery/cherry.tscn" id="24_o7pso"]
+[ext_resource type="PackedScene" uid="uid://c6diiunn70psp" path="res://AssetPacks/ProjectPacks/Pickups/Cherry/cherry.tscn" id="24_o7pso"]
 [ext_resource type="AudioStream" uid="uid://dinseoiw5ecvq" path="res://AssetPacks/ProjectPacks/Music/walkyandtalky.ogg" id="25_o16sg"]
 
 [node name="World" type="Node2D"]

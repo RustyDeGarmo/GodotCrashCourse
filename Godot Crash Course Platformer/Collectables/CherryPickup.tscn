@@ -1,0 +1,55 @@
+[gd_scene load_steps=11 format=3 uid="uid://622iq4nrxxji"]
+
+[ext_resource type="Script" path="res://Collectables/CherryPickup.gd" id="1_1oy1x"]
+[ext_resource type="Texture2D" uid="uid://b2bcdodvci4qp" path="res://AssetPacks/Sunny Land Collection Files/Sunny Land Collection Files/Assets/Packs/Sunnyland/sprites/cherry/cherry-1.png" id="1_675k1"]
+[ext_resource type="Texture2D" uid="uid://d21ryg3xc2ing" path="res://AssetPacks/Sunny Land Collection Files/Sunny Land Collection Files/Assets/Packs/Sunnyland/sprites/cherry/cherry-2.png" id="2_pf4pa"]
+[ext_resource type="Texture2D" uid="uid://chbhgq2x3vpfv" path="res://AssetPacks/Sunny Land Collection Files/Sunny Land Collection Files/Assets/Packs/Sunnyland/sprites/cherry/cherry-3.png" id="3_w4tql"]
+[ext_resource type="Texture2D" uid="uid://d0ncktsitk3fx" path="res://AssetPacks/Sunny Land Collection Files/Sunny Land Collection Files/Assets/Packs/Sunnyland/sprites/cherry/cherry-4.png" id="4_u6x4p"]
+[ext_resource type="Texture2D" uid="uid://dho3abupep8io" path="res://AssetPacks/Sunny Land Collection Files/Sunny Land Collection Files/Assets/Packs/Sunnyland/sprites/cherry/cherry-5.png" id="5_yta27"]
+[ext_resource type="Texture2D" uid="uid://b1j141a8011d6" path="res://AssetPacks/Sunny Land Collection Files/Sunny Land Collection Files/Assets/Packs/Sunnyland/sprites/cherry/cherry-6.png" id="6_jhf0v"]
+[ext_resource type="Texture2D" uid="uid://7wr3ym7b07us" path="res://AssetPacks/Sunny Land Collection Files/Sunny Land Collection Files/Assets/Packs/Sunnyland/sprites/cherry/cherry-7.png" id="7_kwdxg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3pjqe"]
+radius = 7.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c3ts7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_675k1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pf4pa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_w4tql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_u6x4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yta27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_jhf0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_kwdxg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CherryPickup" type="Area2D"]
+script = ExtResource("1_1oy1x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 0)
+shape = SubResource("CircleShape2D_3pjqe")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_c3ts7")
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
