@@ -1,10 +1,10 @@
 extends Node2D
 
-var Cherry = preload("res://Collectables/CherryPickup.tscn")
+var cherry = preload("res://Collectables/CherryPickup.tscn")
 
 
 func _on_timer_timeout():
-	var cherryTemp = Cherry.instantiate()
+	var cherryTemp = cherry.instantiate()
 	
 	var rng = RandomNumberGenerator.new()
 	var randX = rng.randi_range(25, 1300)

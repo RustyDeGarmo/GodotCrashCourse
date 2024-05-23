@@ -20,7 +20,7 @@ func _physics_process(delta):
 		if animatedSprite.animation != "Death":
 			animatedSprite.play("Jump")
 		
-		player = $"../../Player/Player"
+		player = $"../../../Player/Player"
 		
 		var direction = (player.position - self.position).normalized()
 		if direction.x > 0:
