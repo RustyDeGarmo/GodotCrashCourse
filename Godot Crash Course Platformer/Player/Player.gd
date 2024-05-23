@@ -40,6 +40,7 @@ func _physics_process(delta):
 
 	move_and_slide()
 	
+	
 	if Game.playerHP <= 0:
 		queue_free()
 		Game.playerHP = 10

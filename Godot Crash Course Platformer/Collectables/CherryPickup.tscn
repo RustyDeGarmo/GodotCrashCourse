@@ -37,7 +37,7 @@ animations = [{
 "texture": ExtResource("7_kwdxg")
 }],
 "loop": true,
-"name": &"default",
+"name": &"Idle",
 "speed": 5.0
 }]
 
@@ -50,6 +50,7 @@ shape = SubResource("CircleShape2D_3pjqe")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_c3ts7")
+animation = &"Idle"
 metadata/_edit_lock_ = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
